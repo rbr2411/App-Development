@@ -10,306 +10,361 @@
         android:id="@+id/Scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginRight="9dp"
-        android:layout_marginBottom="9dp"
+        android:layout_margin="@dimen/Standard_Margin"
+        android:layout_marginStart="@dimen/Standard_Margin"
+        android:layout_marginLeft="@dimen/Standard_Margin"
+        android:layout_marginTop="@dimen/Standard_Margin"
+        android:layout_marginEnd="@dimen/Standard_Margin"
+        android:layout_marginRight="@dimen/Standard_Margin"
+        android:layout_marginBottom="@dimen/Standard_Margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:id="@+id/linearLayoutVertical"
-            android:layout_width="fill_parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            tools:context=".EmployeeActivity">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp">
-
-                <TextView
-                    android:id="@+id/Company"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="5dp"
-                    android:text="@string/company"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/companyName"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="1"
-                    android:hint="@string/company1"
-                    android:inputType="textPersonName"
-                    android:textSize="18sp"
-                    android:autofillHints="" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="5dp"
-                    android:text="@string/name"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/employeeName"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:inputType="textPersonName"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="5dp"
-                    android:text="@string/e_mail_id"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/editText7"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:hint="@string/official_e_mail_address"
-                    android:inputType="textEmailAddress"
-                    android:textSize="14dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="5dp"
-                    android:text="Phone Number:"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/editText8"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Registered phone Number"
-                    android:inputType="phone"
-                    android:textSize="14dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="50dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Are you having cough or fever or flu in the past 14 days? "
-                    android:textSize="18sp"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="40dp">
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="YES">
-
-                </Button>
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="NO"></Button>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="50dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Are you currently serving any Leave Of Absence Or Work From Home?"
-                    android:textSize="18sp"
-                    android:textStyle="bold">
-
-                </TextView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="40dp">
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/yes">
-
-                </Button>
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="NO"></Button>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="30dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Did you travel overseas in the last 14 days?"
-                    android:textSize="18sp"
-                    android:textStyle="bold">
-
-                </TextView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="40dp">
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="YES">
-
-                </Button>
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/no"></Button>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="40dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="If, yes then where did you visit?"
-                    android:textSize="18sp"
-                    android:textStyle="bold"></TextView>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:hint="@string/country_s_name"
-                    android:textSize="14sp"
-                    android:autofillHints=""></EditText>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="50dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/have_you_ever_came_in_contact_with_a_covid_patient"
-                    android:textSize="18sp"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
-
-            <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="40sp"
-                android:hint="@string/type_yes_or_no"></EditText>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="40dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/your_body_temperature_today"
-                    android:textSize="18sp"
-                    android:textStyle="bold"></TextView>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:hint="@string/in_fahrenheit"
-                    android:textSize="18sp"></EditText>
-            </LinearLayout>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:id="@+id/Company"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="@dimen/Employee_Padding"
+                android:text="@string/company"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
+                android:autofillHints="Enter Company"
+                android:hint="@string/company1"
+                android:inputType="textCapWords"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Company" />
+
+
+            <TextView
+                android:id="@+id/Employee"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
+                android:padding="@dimen/Employee_Padding"
+                android:text="@string/name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/companyName" />
+
+            <EditText
+                android:id="@+id/employeeName"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
+                android:autofillHints="Enter Name"
+                android:hint="@string/name1"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Employee" />
+
+
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
+                android:padding="@dimen/Employee_Padding"
+                android:text="@string/e_mail_id"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/employeeName" />
+
+            <EditText
+                android:id="@+id/emailName"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
+                android:hint="@string/official_e_mail_address"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Email" />
+
+
+            <TextView
+                android:id="@+id/Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
+                android:padding="@dimen/Employee_Padding"
+                android:text="@string/phone_number"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailName" />
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
+                android:ems="10"
+                android:hint="@string/registered_phone_number"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Phone" />
+
+
+            <TextView
+                android:id="@+id/Symptoms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/Employee_Padding"
+                android:text="@string/are_you_having_cough_or_fever_or_flu_in_the_past_14_days"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
+
+
+            <RadioGroup
+                android:id="@+id/symptomsRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Symptoms">
+
+                <RadioButton
+                    android:id="@+id/yesSymptom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/noSymptom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/Absence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/Employee_Padding"
+                android:text="@string/are_you_currently_serving_any_leave_of_absence_or_work_from_home"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/symptomsRadio">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/absenceRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Absence">
+
+                <RadioButton
+                    android:id="@+id/yesAbsence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/noAbsence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/Overseas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/Employee_Padding"
+                android:text="@string/did_you_travel_overseas_in_the_last_14_days"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/absenceRadio">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/overseasRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Overseas">
+
+                <RadioButton
+                    android:id="@+id/yesOverseas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/noOverseas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/Visit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
+                android:padding="@dimen/Employee_Padding"
+                android:text="@string/if_yes_then_where_did_you_visit"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/overseasRadio" />
+
+            <EditText
+                android:id="@+id/visitPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
+                android:autofillHints=""
+                android:hint="@string/country_s_name"
+                android:inputType="textCapWords"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Visit" />
+
+
+            <TextView
+                android:id="@+id/Contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/Employee_Padding"
+                android:text="@string/have_you_ever_came_in_contact_with_a_covid_patient"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/visitPlace" />
+
+            <RadioGroup
+                android:id="@+id/contactRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Contact">
+
+                <RadioButton
+                    android:id="@+id/yesContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/noContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/Temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
+                android:padding="@dimen/Employee_Padding"
+                android:text="@string/your_body_temperature_today"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contactRadio" />
+
+            <EditText
+                android:id="@+id/temperatureFarenheit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
+                android:hint="@string/in_fahrenheit"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Temperature" />
+
+
+            <TextView
+                android:id="@+id/Containment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/Employee_Padding"
                 android:text="@string/did_you_visit_any_other_company_lab_or_a_containment_or_red_zone"
                 android:textSize="18sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/temperatureFarenheit" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:hint="@string/type_yes_or_no_if_yes_mention_the_area_you_visited"
-                android:textSize="18sp"
-                android:autofillHints=""></EditText>
+            <RadioGroup
+                android:id="@+id/containmentRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Containment">
+
+                <RadioButton
+                    android:id="@+id/yesContainment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/noContainment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+            </RadioGroup>
+
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:id="@+id/relevant"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
+                android:padding="@dimen/Employee_Padding"
                 android:text="@string/any_other_relevant_information"
                 android:textSize="18sp"
-                android:textStyle="bold">
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/containmentRadio">
 
             </TextView>
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:id="@+id/releventInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Text_Height"
                 android:hint="@string/your_response_is_valuable_to_us"
-                android:textSize="18sp">
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relevant">
 
             </EditText>
 
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
 

@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Healthcare App</string>
-    <string name="yes">Yes</string>
     <string name="No">No</string>
     <string name="have_you_ever_came_in_contact_with_a_covid_patient">Have you ever came in contact with a covid patient?</string>
     <string name="company">Company\'s Name:</string>
@@ -20,4 +19,12 @@
     <string name="employee_login">Employee Login:</string>
     <string name="welcome_to_healthcare_app">Welcome to HealthCare App</string>
     <string name="hr_manager_login">HR/ Manager Login:</string>
+    <string name="name1">Enter Your Name</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="registered_phone_number">Registered phone Number</string>
+    <string name="are_you_having_cough_or_fever_or_flu_in_the_past_14_days">Are you having cough or fever or flu in the past 14 days?</string>
+    <string name="yes">Yes</string>
+    <string name="are_you_currently_serving_any_leave_of_absence_or_work_from_home">Are you currently serving any Leave Of Absence Or Work From Home?</string>
+    <string name="did_you_travel_overseas_in_the_last_14_days">Did you travel overseas in the last 14 days?</string>
+    <string name="if_yes_then_where_did_you_visit">If yes, then where did you visit?</string>
 </resources>
