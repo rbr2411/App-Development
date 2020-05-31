@@ -17,4 +17,7 @@
     <string name="your_body_temperature_today">Your Body Temperature today:</string>
     <string name="type_yes_or_no">Type Yes or No</string>
     <string name="in_fahrenheit">in Fahrenheit</string>
+    <string name="employee_login">Employee Login:</string>
+    <string name="welcome_to_healthcare_app">Welcome to HealthCare App</string>
+    <string name="hr_manager_login">HR/ Manager Login:</string>
 </resources>

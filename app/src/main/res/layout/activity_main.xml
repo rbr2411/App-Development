@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Welcome to HealthCare App"
+        android:text="@string/welcome_to_healthcare_app"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Employee Login:"
+        android:text="@string/employee_login"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="HR/ Manager Login:"
+        android:text="@string/hr_manager_login"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/employeeLogIn"
         app:layout_constraintTop_toBottomOf="@+id/employeeLogIn" />
