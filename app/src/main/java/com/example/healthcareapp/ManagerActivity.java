@@ -16,7 +16,7 @@ public class ManagerActivity extends AppCompatActivity {
     }
     public void btnSubmit(View view){
         String toastText = "Accessing the database";
-        Toast.makeText(this,toastText,Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,toastText,Toast.LENGTH_LONG).show();
     }
 
 }
