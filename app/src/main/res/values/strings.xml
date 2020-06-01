@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Healthcare App</string>
+    <string name="yes">Yes</string>
+    <string name="No">No</string>
+    <string name="have_you_ever_came_in_contact_with_a_covid_patient">Have you ever came in contact with a covid patient?</string>
+    <string name="company">Company\'s Name:</string>
+    <string name="company1">Enter Company\'s Name:</string>
+    <string name="name">Employee Name:</string>
+</resources>
