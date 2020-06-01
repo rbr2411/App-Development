@@ -1,14 +1,15 @@
 package com.example.healthcareapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class Employee2Activity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class EmployeeActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee);
+
     }
 }

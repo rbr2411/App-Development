@@ -6,4 +6,15 @@
     <string name="company">Company\'s Name:</string>
     <string name="company1">Enter Company\'s Name:</string>
     <string name="name">Employee Name:</string>
+    <string name="e_mail_id">E-mail Id:</string>
+    <string name="official_e_mail_address">Official E-mail address</string>
+    <string name="no">NO</string>
+    <string name="did_you_visit_any_other_company_lab_or_a_containment_or_red_zone">Did you visit any other company,lab or a containment or red zone?</string>
+    <string name="type_yes_or_no_if_yes_mention_the_area_you_visited">Type Yes or No. If Yes, mention the area you visited</string>
+    <string name="any_other_relevant_information">Any other relevant information:</string>
+    <string name="your_response_is_valuable_to_us">Your response is valuable to us.</string>
+    <string name="country_s_name">Country\'s Name</string>
+    <string name="your_body_temperature_today">Your Body Temperature today:</string>
+    <string name="type_yes_or_no">Type Yes or No</string>
+    <string name="in_fahrenheit">in Fahrenheit</string>
 </resources>
