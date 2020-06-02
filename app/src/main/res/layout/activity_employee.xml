@@ -364,13 +364,15 @@
             </EditText>
 
             <Button
+                android:id="@+id/Save"
+                style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/releventInfo"
                 android:layout_margin="8dp"
-                android:text="@string/submitform" />
+                android:onClick="btnSave"
+                android:text="@string/submitform"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/releventInfo" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

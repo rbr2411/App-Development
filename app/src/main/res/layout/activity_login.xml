@@ -7,24 +7,23 @@
     tools:context=".LoginActivity">
 
     <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
         android:id="@+id/tabBar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_editor_absoluteX="1dp"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
             android:id="@+id/tabChats"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Employee" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tabStatus"
             android:text="HR Login" />
 
     </com.google.android.material.tabs.TabLayout>
