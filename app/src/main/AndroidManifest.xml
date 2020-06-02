@@ -24,14 +24,13 @@
         </activity>
         <activity
             android:name=".EmployeeActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".ManagerActivity"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".LoginActivity"
             tools:targetApi="jelly_bean" />
         <activity
-            android:name=".MainActivity"
-            android:label="MainActivity" />
+            android:name=".ManagerActivity"
+            android:parentActivityName=".LoginActivity"
+            tools:targetApi="jelly_bean" />
+
     </application>
 
 </manifest>
