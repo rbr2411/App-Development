@@ -11,6 +11,6 @@ public class EmployeeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee);
     }
-    // To add a notification to remind user to update temperature and
-    // has he visited a containment zone
+
+
 }

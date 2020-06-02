@@ -15,10 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void btnEmployee(View view){
-        Intent intent = new Intent(MainActivity.this,EmployeeActivity.class);
-        startActivity(intent);
-    }
+
 
     public void btnManager(View view){
         Intent intent = new Intent(MainActivity.this,ManagerActivity.class);
