@@ -1,9 +1,13 @@
 package com.example.healthcareapp;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -12,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class EmployeeActivity extends AppCompatActivity {
 
+    private static final int REQUEST_IMAGE_CAPTURE =1;
+    ImageView imageView;
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +36,7 @@ public class EmployeeActivity extends AppCompatActivity {
         RadioGroup overseas = findViewById(R.id.overseasRadio);
         RadioGroup contact = findViewById(R.id.contactRadio);
         RadioGroup containment = findViewById(R.id.containmentRadio);
+        imageView=findViewById(R.id.Image);
 
         //used to check if a field added by user is empty
         // if (TextUtils.isEmpty(company.getText()))
@@ -69,5 +76,25 @@ public class EmployeeActivity extends AppCompatActivity {
 
 
     }
+    private void selectImage() {
+        Intent takeImageIntent = ImagePicker.getPickImageIntent(this);
+        if (takeImageIntent.resolveActivity(this.getPackageManager()) != null) {
+            startActivityForResult(takeImageIntent, REQUEST_IMAGE_CAPTURE);
+        }
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Bitmap bitmap = ImagePicker.getBitmapFromResult(this, resultCode, data);
+        if (null != bitmap && resultCode == RESULT_OK) {
+            imageView=findViewById(R.id.Image);
+            imageView.setImageBitmap(bitmap);
+        }
+    }
 
+
+
+    public void btnAddImage(View view) {
+            selectImage();
+    }
 }
