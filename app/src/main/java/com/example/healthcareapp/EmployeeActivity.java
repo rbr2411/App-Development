@@ -34,7 +34,7 @@ public class EmployeeActivity extends AppCompatActivity {
         //used to check if a field added by user is empty
         // if (TextUtils.isEmpty(company.getText()))
 
-        //with radiogroup buttons we use getCheckedRadioButtonId() function
+        //with RadioGroup buttons we use getCheckedRadioButtonId() function
         if (TextUtils.isEmpty(company.getText())){
             company.setError("Company Name is required");
         }
