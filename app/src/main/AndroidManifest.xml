@@ -3,6 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.healthcareapp">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,14 +32,19 @@
         </activity>
         <activity
             android:name=".EmployeeActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".LoginActivity"
+            tools:targetApi="jelly_bean" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ManagerActivity"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".LoginActivity"
             tools:targetApi="jelly_bean" />
-        <activity
-            android:name=".MainActivity"
-            android:label="MainActivity" />
+
     </application>
 
 </manifest>

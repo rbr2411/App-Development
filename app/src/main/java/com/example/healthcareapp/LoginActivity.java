@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
 
         TabLayout tabLayout=findViewById(R.id.tabBar);
         TabItem tabChats=findViewById(R.id.tabChats);
-        TabItem tabLStatus=findViewById(R.id.tabStatus);
+        TabItem tabStatus=findViewById(R.id.tabStatus);
         final ViewPager viewPager=findViewById(R.id.viewPager);
 
         PagerAdapter pagerAdapter=new
