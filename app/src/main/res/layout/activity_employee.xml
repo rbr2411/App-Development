@@ -362,6 +362,24 @@
                 app:layout_constraintTop_toBottomOf="@+id/relevant">
 
             </EditText>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Image"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/releventInfo"/>
+
+            <Button
+                android:id="@+id/addImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+                android:text="Choose Image"
+                android:onClick="btnAddImage"
+                android:layout_margin="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Image"/>
+
 
             <Button
                 android:id="@+id/Save"
@@ -372,7 +390,8 @@
                 android:onClick="btnSave"
                 android:text="@string/submitform"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/releventInfo" />
+                app:layout_constraintTop_toBottomOf="@+id/addImage" />
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
